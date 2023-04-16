@@ -4,7 +4,7 @@ import { cartImg, logoDark } from "../assets/index";
 const Navbar = () => {
   return (
     <>
-      <div className="w-full h-20 bg-white border-b-2 border-b-black">
+      <div className="w-full h-20 bg-white border-b-2 border-b-black sticky top-0 z-50">
         <div className="LOGO max-w-screen-xl h-full mx-auto flex items-center justify-between">
           <img className="w-28" src={logoDark} alt="logo-dark" />
           <div className="NAV-BTNS flex items-center gap-8">

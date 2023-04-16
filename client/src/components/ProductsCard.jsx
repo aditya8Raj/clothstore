@@ -1,10 +1,11 @@
 import React from "react";
 
-const ProductsCard = () => {
+const ProductsCard = ({ product }) => {
+  console.log(product);
   return (
     <>
       <div>
-        <h1>PRODUCTS!!</h1>
+        <img src={product.image} alt="productImg" />
       </div>
     </>
   );
