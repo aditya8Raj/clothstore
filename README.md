@@ -4,10 +4,10 @@ I'm currently working on this!
 
 If you want to see the progress so far, you can follow the below commands:
 
-$ git clone https://github.com/aditya8Raj/clothstore
+`git clone https://github.com/aditya8Raj/clothstore`
 
-$cd client
+`cd client`
 
-$ npm install
+`npm install`
 
-$ npm start
+`npm start`
