@@ -6,7 +6,7 @@ If you want to see the progress so far, you can follow the below commands:
 
 1. Clone this repo :
 ```
-git clone https://github.com/aditya8Raj/clothstore
+git clone https://github.com/aditya8Raj/clothstore.git
 ```
 
 2. I have not set up the server yet, so you can just see the client for now :
