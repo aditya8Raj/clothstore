@@ -4,13 +4,14 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Cart from "./pages/Cart";
 import SignIn from "./pages/SignIn";
+import Product from "./components/Product";
+import { productsData } from "./api/Api";
 import {
   createBrowserRouter,
   Outlet,
   RouterProvider,
   // ScrollRestoration,
 } from "react-router-dom";
-import { productsData } from "./api/Api";
 
 const Layout = () => {
   return (
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
       {
         path: "/signin",
         element: <SignIn />,
+      },
+      {
+        path: "/product/:id",
+        element: <Product />,
       },
     ],
   },
