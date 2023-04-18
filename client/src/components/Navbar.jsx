@@ -5,6 +5,11 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const productData = useSelector((state) => state.bazar.productData);
+  const userInfo = useSelector((state) => state.bazar.userInfo);
+  const fullName = userInfo ? userInfo.name : "";
+  const firstName = fullName.split(" ")[0];
+
+  console.log(userInfo);
   return (
     <>
       <div className="w-full h-20 bg-white border-b-2 border-b-black sticky top-0 z-50">
@@ -35,11 +40,23 @@ const Navbar = () => {
                 </span>
               </div>
             </Link>
-            <img
-              className="w-8 h-8 rounded-full"
-              src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
-              alt="userLogo"
-            />
+
+            <Link to="login">
+              <img
+                className="w-8 h-8 rounded-full"
+                src={
+                  userInfo
+                    ? userInfo.image
+                    : "https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80.png"
+                }
+                alt="userImg"
+              />
+            </Link>
+            {userInfo && (
+              <p className="text-base font-mono font-semibold underline underline-offset">
+                {firstName}
+              </p>
+            )}
           </div>
         </div>
       </div>

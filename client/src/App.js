@@ -3,7 +3,7 @@ import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Cart from "./pages/Cart";
-import SignIn from "./pages/SignIn";
+import Login from "./pages/Login";
 import Product from "./components/Product";
 import { productsData } from "./api/Api";
 import {
@@ -43,8 +43,8 @@ const router = createBrowserRouter([
         element: <Cart />,
       },
       {
-        path: "/signin",
-        element: <SignIn />,
+        path: "/login",
+        element: <Login />,
       },
       {
         path: "/product/:id",
