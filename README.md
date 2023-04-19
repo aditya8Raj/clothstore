@@ -9,7 +9,7 @@ If you want to see the progress so far, you can follow the below commands:
 git clone https://github.com/aditya8Raj/clothstore.git
 ```
 
-2. I have not set up the server yet, so you can just see the client for now :
+2. I have not hosted the server, so :
 ```
 cd client
 ```
