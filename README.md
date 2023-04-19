@@ -23,3 +23,5 @@ npm install
 ```
 npm start
 ```
+
+This project is not responsive for mobile devics
