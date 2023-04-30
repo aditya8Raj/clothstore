@@ -1,7 +1,5 @@
 # clothStore
 
-I'm currently working on this!
-
 If you want to see the progress so far, you can follow the below commands:
 
 1. Clone this repo :
